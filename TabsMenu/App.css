@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --main-bg:#38ada9;
+}
+
+.react-tab {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin:0 auto;
+    font-family:"Quicksand",sans-serif;
+    min-height:100vh;
+}
+
+.react-tab .content {
+    width:77%;
+}
+
+.react-tab header {
+    text-align:center;
+}
+
+.react-tab header h2 {
+    font-size:2.4rem;
+    line-height:0;
+    font-weight:700;
+}
+
+#linear {
+    width:60px;
+    height:4px;
+    background-color:var(--main-bg);
+    display:inline-block;
+    margin-top:30px;
+}
+
+.react-tab .tab-content {
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-top:40px;
+
+}
+
+.tab-content .set-tab {
+    width:20%;
+}
+
+.tab-content .set-tab .tabs {
+    border-left:solid 3px var(--main-bg);
+}
+
+.set-tab h3 {
+    font-size:1.2rem;
+    font-weight:500;
+    transition:color 0.4s ease;
+}
+
+
+.tab-content .set-tab  h3:hover {
+    color:var(--main-bg);
+}
+
+.tab-content .tab-literature {
+    width:74%;
+}
+
+.tab-literature h2 {
+    font-size:2rem;
+    font-weight:500;
+}
+
+.tab-literature button {
+    background-color: rgb(219, 251, 255);
+    color:#222;
+    padding:0.40rem 0.80rem;
+    border-radius:4px;
+    cursor:pointer;
+    margin:12px 0 20px;
+    border:none;
+}
+
+.tab-content .review li {
+    list-style:none;
+    display:flex;
+    align-items: flex-start;
+    margin:30px 0 0;
+}
+
+.review .right {
+    margin-left:20px;
+}
+
