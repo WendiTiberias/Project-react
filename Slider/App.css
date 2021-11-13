@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Quicksand",sans-serif;
+}
+
+body {
+    background-color:whitesmoke;
+}
+
+
+.slider-container {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin:0 auto;
+    min-height:100vh;
+    padding:0rem 0;
+}
+
+.slider-container header {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+}
+
+.slider-container header span {
+    display:inline-block;
+    font-weight: 700;
+    color:orangered;
+    font-size:1.7rem;
+    margin-right:20px;
+}
+
+.slider-container header h2 {
+    font-size:2.1rem;
+    color:rgb(54, 54, 54);
+}
+
+.slider-container .item-container {
+    width: 100%;
+    position:relative;
+}
+
+.slider-container .slider-content {
+    width:80vw;
+    max-width: 700px;
+    height:420px;
+    margin:50px auto 0;
+    display:flex;
+    position:relative;
+    overflow:hidden;
+}
+
+.slider-container section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition:transform 0.4s linear;
+}
+
+.slider-container section h4 {
+    text-transform:uppercase;
+    margin:20px 0 0;
+    color:#ba5d2c;
+    font-size:1.2rem;
+}
+
+.slider-container section h5 {
+    margin:10px 0 12px;
+    text-transform:capitalize;
+}
+
+.slider-container section p {
+    font-size:0.92rem;
+    line-height:25px;
+    margin-top:12px;
+}
+
+.slider-container .button-slider {
+    width:850px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+    position:absolute;
+    bottom:260px;
+    left:22%;
+}
+
+.slider-container .button-slider button {
+    cursor:pointer;
+}
+
+section.activeslide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  section.lastslide {
+    transform: translateX(-100%);
+  }
+  section.nextslide {
+    transform: translateX(100%);
+  }
