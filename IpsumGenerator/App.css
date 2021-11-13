@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+:root {
+    --color:#063251;
+    --bg:#49a6e9;
+}
+
+* {
+    padding:0;
+    box-sizing:border-box;
+    margin:0;
+    font-family:"Quicksand",sans-serif;
+}
+
+.ipsum {
+    padding:4rem 0;
+    text-align:center;
+}
+
+.ipsum header h3 {
+    font-weight:700;
+    font-size:1.7rem;
+    color:var(--color);
+}
+
+.ipsum header .form {
+    margin-top:40px;
+}
+
+.ipsum header input {
+    width:85px;
+    border:solid 1px var(--color);
+    margin:0 13px;
+    padding:0.50rem 0.20rem;
+    border-radius:4px;
+}
+
+.ipsum header button {
+    padding:0.50rem 1rem;
+    color:white;
+    font-weight:600;
+    background-color: var(--bg);
+    border:solid 1px var(--color);
+    cursor:pointer;
+    border-radius: 4px;
+    font-size:1rem;
+    transition:color 0.3s ease , opacity 0.4s ease;
+}
+
+.ipsum header button:hover {
+    opacity:0.7;
+}
+
+.ipsum header span {
+    display:inline-block;
+    font-size:1.1rem;
+    color:var(--color);
+}
+
+.ipsum .paragraph {
+    width:60%;
+    margin:30px auto;
+}
+
+.ipsum .paragraph p {
+    font-size:0.87rem;
+    line-height:32px;
+}
